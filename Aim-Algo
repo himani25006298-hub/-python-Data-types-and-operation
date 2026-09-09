@@ -17,6 +17,8 @@ Algorithm:
 5. Stop.
 
 
+
+
 #Arithmatic Operator
 a=19
 b=2
@@ -99,6 +101,8 @@ c=a
 print("a=4\nb=3\nc=a")
 print(a is not b)
 print(a is c)
+
+
 
 OUTPUT:
 
