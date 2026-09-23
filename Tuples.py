@@ -17,4 +17,13 @@ Name,Age,Netsal=EmpCalc()
 print("Employee Name:",Name)
 print("Employee age:",Age)
 print("Net salary:",Netsal)
+
+OUTPUT:enter Name:himani
+enter Age:20
+enter salary:30000
+Senior manager
+Employee Name: himani
+Employee age: 20
+Net salary: 48000.0
+
             
