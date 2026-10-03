@@ -1,1 +1,90 @@
+Aim
+To write a Python program to create and perform various operations on a dictionary, use dictionary methods, and find the frequency of each character in a string.
 
+Algorithm
+Start the program.
+Create a dictionary student with name, age, department, and employee ID.
+Display the dictionary.
+Add marks to the dictionary and display it.
+Update the student's age and display the dictionary.
+Delete the department key and display the dictionary.
+Display the dictionary's keys, values, and items.
+Use get() to access the student's name and marks.
+Use update() to update the age and marks.
+Take a string as input from the user.
+Create an empty dictionary called frequency.
+Traverse each character in the string.
+If the character already exists, increase its count by 1; otherwise, set its count to 1.
+Display the frequency of each character.
+Stop the program.
+
+program:
+student={
+    "name":"Rahul",
+    "age":20,
+    "department":"BCA",
+    "empid":2
+    }
+
+print("The dictionary is:",student)
+student["marks"]=85
+print("after adding:",student)
+student["age"]=24
+print("after updating",student)
+del student["department"]
+print("after deleting",student)
+
+#methods
+print("keys:")
+print(student.keys())
+print("values:")
+print(student.values())
+print("items:")
+print(student.items())
+print("Name:",student.get("name"))
+print("Marks:",student.get("marks","not available"))
+student.update({"age":21,"marks":85})
+print("after updating:",student)
+
+#frequency
+text=input("enter a string:")
+frequency={}
+for ch in text:
+    if ch in frequency:
+        frequency[ch]=frequency[ch]+1
+    else:
+        frequency[ch]=1
+print("character frequency:")
+for ch, count in frequency.items():
+    print(ch,":",count)
+
+OUTPUT:
+The dictionary is: {'name': 'Rahul', 'age': 20, 'department': 'BCA', 'empid': 2}
+
+after adding: {'name': 'Rahul', 'age': 20, 'department': 'BCA', 'empid': 2, 'marks': 85}
+
+after updating {'name': 'Rahul', 'age': 24, 'department': 'BCA', 'empid': 2, 'marks': 85}
+
+after deleting {'name': 'Rahul', 'age': 24, 'empid': 2, 'marks': 85}
+
+keys:
+dict_keys(['name', 'age', 'empid', 'marks'])
+
+values:
+dict_values(['Rahul', 24, 2, 85])
+
+items:
+dict_items([('name', 'Rahul'), ('age', 24), ('empid', 2), ('marks', 85)])
+
+Name: Rahul
+Marks: 85
+
+after updating: {'name': 'Rahul', 'age': 21, 'empid': 2, 'marks': 85}
+
+enter a string: hello
+
+character frequency:
+h : 1
+e : 1
+l : 2
+o : 1
