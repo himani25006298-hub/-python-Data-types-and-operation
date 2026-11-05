@@ -10,7 +10,7 @@ ALGORITHM
 6.Display the result.
 7.Repeat the process using a while loop.
 8.If the user chooses Exit, stop the loop.
-9.Stop.# Calculator using control flow and looping statements
+9.Stop.
 
 
 CODE
